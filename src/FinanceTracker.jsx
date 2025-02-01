@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 
 const FinanceTracker = () => {
-  // Helper function to format number in Indian currency format (e.g., 1,00,000)
   const formatIndianRupees = (num) => {
     const formatted = num.toFixed(2);
     const [wholePart, decimal] = formatted.split('.');
@@ -213,7 +212,6 @@ const FinanceTracker = () => {
         </button>
       </form>
 
-      {/* Recent Transactions */}
       <div style={styles.card}>
         <h3>Recent Transactions</h3>
         <table style={styles.table}>
